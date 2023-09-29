@@ -1,0 +1,120 @@
+/* For desktop view, display three columns in a row */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #F1F2F6;
+  margin-top: 1rem;
+}
+
+.product-container {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Set the desired height for the image container */
+  background-color: #F1F2F6;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-desc {
+  font-family: var(--secondary-font);
+  /* margin-top: 10px; */
+  /* font-weight: bold; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.product-name,
+.product-price {
+  font-family: var(--secondary-font);
+  margin-top: 10px;
+}
+
+.add-to-cart-button {
+  margin-top: 20px;
+  background-color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+
+/* @media (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .product-box {
+    flex: 0 0 100%;
+  
+  }
+
+  .product-image-container {
+    height: auto;
+  }
+}  */
+
+@media (max-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: -10px; 
+    background-color: yellow;
+  }
+
+  .product-box {
+    flex: 0 0 100%; 
+  }
+
+  .product-image-container {
+    height: auto;
+  }
+
+
+  .product-box img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .product-desc {
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .product-name,
+  .product-price {
+    margin-top: 5px;
+  }
+
+  .add-to-cart-button {
+    margin-top: 15px;
+    padding: 5px 12px;
+  }
+
+}
+
+
+
+

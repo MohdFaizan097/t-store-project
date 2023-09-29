@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+:root {
+  --primary-font : 'Belleza', sans-serif;
+  --secondary-font : 'Nunito Sans', sans-serif;;
+  --primary-color : #fff;
+  --secondary-color : #000;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
